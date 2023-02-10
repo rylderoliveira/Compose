@@ -9,4 +9,5 @@
     <string name="title_activity_material">MaterialActivity</string>
     <string name="title_activity_card">CardActivity</string>
     <string name="title_activity_clickable">ClickableActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
 </resources>

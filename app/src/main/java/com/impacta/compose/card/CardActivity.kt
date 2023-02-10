@@ -76,7 +76,7 @@ fun SimpleCardComponent() {
 @Composable
 fun RoundedCornerCardComponent() {
     Card(
-        shape = RoundedCornerShape(8.dp),
+        shape = RoundedCornerShape(20.dp),
         backgroundColor = Color.White,
         modifier = Modifier
             .padding(16.dp)
@@ -104,11 +104,13 @@ fun ClickableCardComponent() {
         modifier = Modifier
             .padding(16.dp)
             .fillMaxWidth()
-            .clickable(onClick = {
-                Toast
-                    .makeText(context, "Thanks for clicking!", Toast.LENGTH_SHORT)
-                    .show()
-            }),
+            .clickable(
+                onClick = {
+                    Toast
+                        .makeText(context, "Thanks for clicking!", Toast.LENGTH_SHORT)
+                        .show()
+                }
+            ),
         elevation = 36.dp
     ) {
         Text(
@@ -127,11 +129,12 @@ fun ClickableCardComponent() {
 fun BorderedCardComponent() {
     Card(
         shape = RoundedCornerShape(8.dp),
-        backgroundColor = Color.Transparent,
+        backgroundColor = Color.White,
         border = BorderStroke(width = 1.dp, brush = SolidColor(Color.Green)),
         modifier = Modifier
             .padding(16.dp)
             .fillMaxWidth(),
+        elevation = 16.dp
     ) {
         Text(
             text = "Bordered Card",

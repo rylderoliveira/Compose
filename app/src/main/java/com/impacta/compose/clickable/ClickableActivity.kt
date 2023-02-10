@@ -23,6 +23,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -44,6 +45,7 @@ class ClickableActivity : ComponentActivity() {
     }
 }
 
+@Preview
 @Composable
 fun SimpleButtonComponent() {
     val context = LocalContext.current
@@ -60,6 +62,7 @@ fun SimpleButtonComponent() {
 }
 
 @OptIn(ExperimentalFoundationApi::class)
+@Preview
 @Composable
 fun SimpleTextComponent() {
     val context = LocalContext.current
@@ -72,28 +75,32 @@ fun SimpleTextComponent() {
             .fillMaxWidth()
             .combinedClickable(
                 onClick = {
-                    Toast
-                        .makeText(context, "Thanks for clicking! I am Text", Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(
+                        context,
+                        "Thank's for click me. I am a Text",
+                        Toast.LENGTH_LONG
+                    ).show()
                 },
                 onLongClick = {
-                    Toast
-                        .makeText(context, "Thanks for LONG click! I am Text", Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(
+                        context,
+                        "On long click",
+                        Toast.LENGTH_LONG
+                    ).show()
                 },
                 onDoubleClick = {
-                    Toast
-                        .makeText(
-                            context,
-                            "Thanks for DOUBLE click! I am Text",
-                            Toast.LENGTH_SHORT
-                        )
-                        .show()
+                    Toast.makeText(
+                        context,
+                        "On Double click",
+                        Toast.LENGTH_LONG
+                    ).show()
                 }
             )
     )
 }
 
+
+@Preview
 @Composable
 fun SimpleCardComponent() {
     val context = LocalContext.current
