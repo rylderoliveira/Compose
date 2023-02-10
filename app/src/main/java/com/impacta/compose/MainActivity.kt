@@ -13,6 +13,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.impacta.compose.button.ButtonActivity
 import com.impacta.compose.layout.BoxActivity
 import com.impacta.compose.layout.LazyColumnActivity
 import com.impacta.compose.text.TextActivity
@@ -42,6 +43,11 @@ class MainActivity : ComponentActivity() {
                     context = this@MainActivity,
                     nextActivity = LazyColumnActivity::class.java,
                     title = "Lazy Column Activity"
+                )
+                ButtonMain(
+                    context = this@MainActivity,
+                    nextActivity = ButtonActivity::class.java,
+                    title = "Button Activity"
                 )
             }
         }
