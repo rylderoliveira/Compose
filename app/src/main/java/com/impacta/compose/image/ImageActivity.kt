@@ -60,11 +60,10 @@ class ImageActivity : ComponentActivity() {
 @Composable
 fun SimpleImageComponent() {
     val image = ImageVector.vectorResource(id = R.drawable.ic_launcher_foreground)
-    Column(
-        modifier = Modifier.padding(16.dp)
-    ) {
-        Image(imageVector = image, contentDescription = "Image")
-    }
+    Image(
+        imageVector = image,
+        contentDescription = "Image"
+    )
 }
 
 @Preview
@@ -116,7 +115,7 @@ fun SimpleWebImageComponent() {
     ) {
         AsyncImage(
             model = "https://www.pontotel.com.br/wp-content/uploads/2022/05/imagem-corporativa.jpg",
-            contentDescription = "Image"
+            contentDescription = "Imagem da internet"
         )
     }
 }
@@ -136,7 +135,7 @@ fun ComplexWebImageComponent() {
                 .data("https://www.adobe.com/br/express/feature/image/media_142f9cf5285c2cdcda8375c1041d273a3f0383e5f.png?width=750&format=png&optimize=medium")
                 .placeholder(R.drawable.baseline_adb_24)
                 .crossfade(true)
-                .crossfade(3000)
+                .crossfade(5000)
                 .error(R.drawable.ic_launcher_background)
                 .build(),
             contentScale = ContentScale.Crop,
