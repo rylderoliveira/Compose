@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.impacta.compose.button.ButtonActivity
+import com.impacta.compose.card.CardActivity
 import com.impacta.compose.layout.BoxActivity
 import com.impacta.compose.layout.LazyColumnActivity
 import com.impacta.compose.text.TextActivity
@@ -48,6 +49,11 @@ class MainActivity : ComponentActivity() {
                     context = this@MainActivity,
                     nextActivity = ButtonActivity::class.java,
                     title = "Button Activity"
+                )
+                ButtonMain(
+                    context = this@MainActivity,
+                    nextActivity = CardActivity::class.java,
+                    title = "Card Activity"
                 )
             }
         }

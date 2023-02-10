@@ -12,6 +12,11 @@
         android:theme="@style/Theme.Compose"
         tools:targetApi="31">
         <activity
+            android:name=".card.CardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_card"
+            android:theme="@style/Theme.Compose" />
+        <activity
             android:name=".materialdesign.MaterialActivity"
             android:exported="false"
             android:label="@string/title_activity_material"
@@ -49,7 +54,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.Compose">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
