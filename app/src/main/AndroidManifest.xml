@@ -32,7 +32,7 @@
             android:label="@string/title_activity_button"
             android:theme="@style/Theme.Compose" />
         <activity
-            android:name=".preview.layout.BoxActivity"
+            android:name=".layout.BoxActivity"
             android:exported="false"
             android:label="@string/title_activity_box"
             android:theme="@style/Theme.Compose" />
@@ -42,7 +42,7 @@
             android:label="@string/title_activity_text"
             android:theme="@style/Theme.Compose" />
         <activity
-            android:name=".preview.layout.LazyColumnActivity"
+            android:name=".layout.LazyColumnActivity"
             android:exported="false"
             android:label="@string/title_activity_lazy_colunm"
             android:theme="@style/Theme.Compose" />

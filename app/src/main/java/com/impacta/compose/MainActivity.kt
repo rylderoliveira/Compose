@@ -16,8 +16,8 @@ import androidx.compose.ui.unit.dp
 import com.impacta.compose.button.ButtonActivity
 import com.impacta.compose.card.CardActivity
 import com.impacta.compose.clickable.ClickableActivity
-import com.impacta.compose.preview.layout.BoxActivity
-import com.impacta.compose.preview.layout.LazyColumnActivity
+import com.impacta.compose.layout.BoxActivity
+import com.impacta.compose.layout.LazyColumnActivity
 import com.impacta.compose.text.TextActivity
 import com.impacta.compose.text.TextFieldActivity
 

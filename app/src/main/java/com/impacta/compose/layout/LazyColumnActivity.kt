@@ -1,4 +1,4 @@
-package com.impacta.compose.preview.layout
+package com.impacta.compose.layout
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
