@@ -12,6 +12,11 @@
         android:theme="@style/Theme.Compose"
         tools:targetApi="31">
         <activity
+            android:name=".clickable.ClickableActivity"
+            android:exported="false"
+            android:label="@string/title_activity_clickable"
+            android:theme="@style/Theme.Compose" />
+        <activity
             android:name=".card.CardActivity"
             android:exported="false"
             android:label="@string/title_activity_card"
@@ -27,7 +32,7 @@
             android:label="@string/title_activity_button"
             android:theme="@style/Theme.Compose" />
         <activity
-            android:name=".layout.BoxActivity"
+            android:name=".preview.layout.BoxActivity"
             android:exported="false"
             android:label="@string/title_activity_box"
             android:theme="@style/Theme.Compose" />
@@ -37,7 +42,7 @@
             android:label="@string/title_activity_text"
             android:theme="@style/Theme.Compose" />
         <activity
-            android:name=".layout.LazyColumnActivity"
+            android:name=".preview.layout.LazyColumnActivity"
             android:exported="false"
             android:label="@string/title_activity_lazy_colunm"
             android:theme="@style/Theme.Compose" />

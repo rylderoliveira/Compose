@@ -1,4 +1,4 @@
-package com.impacta.compose.layout
+package com.impacta.compose.preview
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import com.impacta.compose.text.Curiosity

@@ -1,4 +1,4 @@
-package com.impacta.compose.layout
+package com.impacta.compose.preview.layout
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -20,6 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
+import com.impacta.compose.preview.CuriositiesProvider
 import com.impacta.compose.text.Curiosity
 import java.util.Random
 
