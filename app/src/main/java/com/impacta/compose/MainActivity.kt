@@ -13,6 +13,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.impacta.compose.layout.BoxActivity
 import com.impacta.compose.layout.LazyColumnActivity
 import com.impacta.compose.text.TextActivity
 import com.impacta.compose.text.TextFieldActivity
@@ -25,17 +26,22 @@ class MainActivity : ComponentActivity() {
                 ButtonMain(
                     context = this@MainActivity,
                     nextActivity = TextActivity::class.java,
-                    title = "Texts"
+                    title = "Text Activity"
                 )
                 ButtonMain(
                     context = this@MainActivity,
                     nextActivity = TextFieldActivity::class.java,
-                    title = "TextFields"
+                    title = "Text Field Activity"
+                )
+                ButtonMain(
+                    context = this@MainActivity,
+                    nextActivity = BoxActivity::class.java,
+                    title = "Box Activity"
                 )
                 ButtonMain(
                     context = this@MainActivity,
                     nextActivity = LazyColumnActivity::class.java,
-                    title = "Lazy Column"
+                    title = "Lazy Column Activity"
                 )
             }
         }
@@ -50,12 +56,11 @@ fun ButtonMain(
 ) {
     Button(
         onClick = {
-            with(context) {
-                val intent = Intent(this, nextActivity)
-                startActivity(intent)
-            }
+            val intent = Intent(context, nextActivity)
+            context.startActivity(intent)
         },
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier
+            .fillMaxWidth()
             .padding(16.dp)
     ) {
         Text(text = title)
