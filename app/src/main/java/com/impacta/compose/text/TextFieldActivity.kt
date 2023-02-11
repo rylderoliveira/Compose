@@ -30,9 +30,10 @@ import androidx.compose.ui.unit.dp
 class TextFieldActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val a = mutableStateOf(1)
         setContent {
             Column {
-                SimpleEmailInput()
+                SimpleEmailInput(a.value)
                 Divider(color = Color.Gray)
                 ColoredEmailInput(Color.Blue)
                 ColoredEmailInput(Color.Red)
@@ -99,7 +100,9 @@ fun ColoredEmailInput(colorAccent: Color, hasBottomIndicator: Boolean = false) {
 }
 
 @Composable
-fun SimpleEmailInput() {
+fun SimpleEmailInput(
+    a: Int,
+) {
     val text = remember { mutableStateOf("") }
     TextField(
         value = text.value,

@@ -51,8 +51,8 @@ fun AlertDialogComponent() {
                     Text("Dismiss")
                 }
             },
-            backgroundColor = Color.Black,
-            contentColor = Color.White
+            backgroundColor = Color.White,
+            contentColor = Color.Black,
         )
     }
 }
