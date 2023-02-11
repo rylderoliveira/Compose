@@ -16,4 +16,6 @@
     </string>
     <string name="title_activity_material_check_box">MaterialCheckBoxActivity</string>
     <string name="title_activity_material_radio_button">MaterialRadioButtonActivity</string>
+    <string name="title_activity_progress_bar">ProgressBarActivity</string>
+    <string name="title_activity_material_slider">MaterialSliderActivity</string>
 </resources>
