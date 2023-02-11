@@ -10,4 +10,9 @@
     <string name="title_activity_card">CardActivity</string>
     <string name="title_activity_clickable">ClickableActivity</string>
     <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="title_activity_single_choice">SingleChoiceActivity</string>
+    <string name="title_activity_material_bottom_navigation">MaterialBottomNavigationActivity
+    </string>
+    <string name="title_activity_material_check_box">MaterialCheckBoxActivity</string>
 </resources>
