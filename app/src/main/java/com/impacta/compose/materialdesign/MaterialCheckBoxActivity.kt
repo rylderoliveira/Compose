@@ -20,6 +20,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.state.ToggleableState
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 class MaterialCheckBoxActivity : ComponentActivity() {
@@ -39,6 +40,7 @@ class MaterialCheckBoxActivity : ComponentActivity() {
     }
 }
 
+@Preview
 @Composable
 fun SimpleCheckboxComponent() {
     val checkedState = remember { mutableStateOf(true) }
@@ -52,6 +54,7 @@ fun SimpleCheckboxComponent() {
     }
 }
 
+@Preview
 @Composable
 fun ColoredCheckboxComponent() {
     val checkedState = remember { mutableStateOf(true) }
@@ -70,10 +73,15 @@ fun ColoredCheckboxComponent() {
     }
 }
 
+@Preview
 @Composable
 fun TriStateCheckboxComponent() {
     val toggleableState =
-        listOf(ToggleableState.Off, ToggleableState.On, ToggleableState.Indeterminate)
+        listOf(
+            ToggleableState.Off,
+            ToggleableState.On,
+            ToggleableState.Indeterminate
+        )
     var counter by remember { mutableStateOf(0) }
     Row(
         modifier = Modifier

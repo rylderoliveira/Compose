@@ -26,6 +26,7 @@ import com.impacta.compose.layout.LazyColumnActivity
 import com.impacta.compose.materialdesign.MaterialActivity
 import com.impacta.compose.materialdesign.MaterialBottomNavigationActivity
 import com.impacta.compose.materialdesign.MaterialCheckBoxActivity
+import com.impacta.compose.materialdesign.MaterialRadioButtonActivity
 import com.impacta.compose.text.TextActivity
 import com.impacta.compose.text.TextFieldActivity
 
@@ -99,6 +100,11 @@ class MainActivity : ComponentActivity() {
                 ButtonMain(
                     context = this@MainActivity,
                     nextActivity = MaterialCheckBoxActivity::class.java,
+                    title = "Checkbox Activity"
+                )
+                ButtonMain(
+                    context = this@MainActivity,
+                    nextActivity = MaterialRadioButtonActivity::class.java,
                     title = "Checkbox Activity"
                 )
             }

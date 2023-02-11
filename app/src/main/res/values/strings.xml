@@ -15,4 +15,5 @@
     <string name="title_activity_material_bottom_navigation">MaterialBottomNavigationActivity
     </string>
     <string name="title_activity_material_check_box">MaterialCheckBoxActivity</string>
+    <string name="title_activity_material_radio_button">MaterialRadioButtonActivity</string>
 </resources>
